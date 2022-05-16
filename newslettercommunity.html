@@ -1,0 +1,354 @@
+<!doctype html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <!-- utf-8 works for most cases -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Forcing initial-scale shouldn't be necessary -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Use the latest (edge) version of IE rendering engine -->
+    <title>EmailTemplate-Responsive</title>
+    <!-- The title tag shows in email notifications, like Android 4.4. -->
+    <!-- Please use an inliner tool to convert all CSS to inline as inpage or external CSS is removed by email clients -->
+    <!-- important in CSS is used to prevent the styles of currently inline CSS from overriding the ones mentioned in media queries when corresponding screen sizes are encountered -->
+
+    <!-- CSS Reset -->
+    <style type="text/css">
+/* What it does: Remove spaces around the email design added by some email clients. */
+      /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+html,  body {
+	margin: 0 !important;
+	padding: 0 !important;
+	height: 100% !important;
+	width: 100% !important;
+}
+/* What it does: Stops email clients resizing small text. */
+* {
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+/* What it does: Forces Outlook.com to display emails full width. */
+.ExternalClass {
+	width: 100%;
+}
+/* What is does: Centers email on Android 4.4 */
+div[style*="margin: 16px 0"] {
+	margin: 0 !important;
+}
+/* What it does: Stops Outlook from adding extra spacing to tables. */
+table,  td {
+	mso-table-lspace: 0pt !important;
+	mso-table-rspace: 0pt !important;
+}
+/* What it does: Fixes webkit padding issue. Fix for Yahoo mail table alignment bug. Applies table-layout to the first 2 tables then removes for anything nested deeper. */
+table {
+	border-spacing: 0 !important;
+	border-collapse: collapse !important;
+	table-layout: fixed !important;
+	margin: 0 auto !important;
+}
+table table table {
+	table-layout: auto;
+}
+/* What it does: Uses a better rendering method when resizing images in IE. */
+img {
+	-ms-interpolation-mode: bicubic;
+}
+/* What it does: Overrides styles added when Yahoo's auto-senses a link. */
+.yshortcuts a {
+	border-bottom: none !important;
+}
+/* What it does: Another work-around for iOS meddling in triggered links. */
+a[x-apple-data-detectors] {
+	color: inherit !important;
+}
+</style>
+
+    <!-- Progressive Enhancements -->
+    <style type="text/css">
+        
+        /* What it does: Hover styles for buttons */
+        .button-td,
+        .button-a {
+            transition: all 100ms ease-in;
+        }
+        .button-td:hover,
+        .button-a:hover {
+            background: #FFFFFF !important;
+            border-color: #FFFFFF !important;
+        }
+
+        /* Media Queries */
+        @media screen and (max-width: 600px) {
+
+            .email-container {
+                width: 100% !important;
+            }
+
+            /* What it does: Forces elements to resize to the full width of their container. Useful for resizing images beyond their max-width. */
+            .fluid,
+            .fluid-centered {
+                max-width: 100% !important;
+                height: auto !important;
+                margin-left: auto !important;
+                margin-right: auto !important;
+            }
+            /* And center justify these ones. */
+            .fluid-centered {
+                margin-left: auto !important;
+                margin-right: auto !important;
+            }
+
+            /* What it does: Forces table cells into full-width rows. */
+            .stack-column,
+            .stack-column-center {
+                display: block !important;
+                width: 100% !important;
+                max-width: 100% !important;
+                direction: ltr !important;
+            }
+            /* And center justify these ones. */
+            .stack-column-center {
+                text-align: center !important;
+            }
+        
+            /* What it does: Generic utility class for centering. Useful for images, buttons, and nested tables. */
+            .center-on-narrow {
+                text-align: center !important;
+                display: block !important;
+                margin-left: auto !important;
+                margin-right: auto !important;
+                float: none !important;
+            }
+            table.center-on-narrow {
+                display: inline-block !important;
+            }
+                
+        }
+
+    </style>
+    </head>
+    <body bgcolor="#FFFFFF" width="100%" style="margin: 0;" yahoo="yahoo">
+    <table cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#ffffff" width="600" class="email-container">
+      <!-- Hero Image, Flush : BEGIN -->
+      <tr>
+        <td class="full-width-image"><a href="https://creators.llc/" target="_blank"><img src="https://mcusercontent.com/1d3d02736d40ab9c7cf09f0b3/images/e7ef086d-ef88-dbd8-599c-9a111c02ad50.gif" width="450" height="" alt=""></a></td>
+      </tr>
+      <!-- Hero Image, Flush : END -->
+      <!-- 1 Column Text : BEGIN -->
+      <tr>
+        <td style="padding: 20px; text-align: left; font-family: 'SF Pro Display', 'Roboto'; font-size: 12px; mso-height-rule: exactly; line-height: 40px; color: #7f7f7f;"> | MARÇO 2022
+          <table cellspacing="0" cellpadding="0" border="0" align="center" style="margin: auto">
+            <tr> </tr>
+          </table>
+          </td>
+      </tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#ffffff" width="600" class="email-container">
+  <tr>
+        <td style="padding: 20px; text-align: left; font-family: 'SF Pro Display', 'Roboto'; font-size: 16px; mso-height-rule: exactly; line-height: 25px; color: #000000;"><p>Você já parou pra pensar no por que a sua comunidade precisa ser engajada, e na importância desse fator? Vamos primeiro ao significado da palavra:
+
+          <p>Comunidade</P>
+          <p>substantivo feminino
+          <p>estado ou qualidade das coisas materiais ou das noções abstratas comuns a diversos indivíduos; comunhão.
+          <p>concordância, concerto, harmonia.
+          <p>"c. de aspirações"
+          
+          <p>Acreditamos que a principal diferença entre comunidade e audiência é que a primeira é ativa, enquanto a segunda, em grande maioria, é passiva - apenas consome o que você cria/publica. 
+          A maneira que você olha para sua comunidade, o espaço que ela ocupa e os desdobramentos dela são essenciais para o seu crescimento como creator. Olha só algumas dicas se ter uma comunidade engajada:
+          
+          <p>1. Defina sua 'persona'
+          Persona nada mais é que um conjunto de características comuns à maioria dos membros da sua comunidade. Gênero, idade, principais interesses - assim sua comunicação fica mais assertiva. 
+          
+          <p>2. Qual a intenção da sua comunidade? 
+          Para que ela serve? Gerar pautas para o seu conteúdo? Receber feedbacks sobre o que você produz? Aumentar suas vendas? Ou todas as anteriores? Definir o objetivo da comunidade é essencial pra não se perder na gestão.
+          
+          <p>3. Falando em gestão, quem vai cuidar da lojinha? 
+          É necessário um ótimo líder para promover o engajamento, quebrar o gelo, fomentar conversas, acolher e criar padrões de comportamento dentro da comunidade. Sem essa figura, não há engajamento!
+          
+          <p>4. Constância e planejamento 
+          Toda quarta eles têm acesso a dicas exclusivas em vídeo? Todo sábado tem live? Planeje uma rotina de ações que vão movimentar a comunidade! Fornecer conteúdos relevantes recorrentemente é a principal chave para o engajamento. 
+          
+          <p>5. VIP
+          O senso de exclusividade e de pertencimento é o que dá gás para qualquer comunidade. Forneça acesso antecipado dos seus conteúdos aos membros - sua comunidade não é sua audiência. Eles são e devem se sentir especiais, afinal, são os grandes entusiastas do seu trabalho!
+          
+          Como num aquário, se você promover o ambiente correto e nutrir sua comunidade, ela tende a ser bem-sucedida. Boas trocas por aí :)
+          </p>
+          </td>
+  </tr>
+    </table>
+<table cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#ffffff" width="600" class="email-container">
+  <tr>
+        <td style="padding: 20px; text-align: left; font-family: montserrat; font-size: 16px; mso-height-rule: exactly; line-height: 25px; color: #000000;"><img src="https://mcusercontent.com/eef0dd89a96a8d4d115efcf01/images/e2c38cf8-32fa-b5df-1bcd-e178e50f6dec.png" width="560" height="1" alt=""/>
+          <!-- Button : END --></td>
+  </tr>
+    </table>
+<table cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#ffffff" width="600" class="email-container">
+  <tr>
+		    <td style="padding: 20px; text-align: left; font-family: montserrat; font-size: 16px; mso-height-rule: exactly; line-height: 25px; color: #000000;"><img src="https://mcusercontent.com/eef0dd89a96a8d4d115efcf01/images/b959bcb9-3227-e250-3bee-34a089aa5b02.png" width=" " height=" " alt=""/>
+		      <!-- Button : END --></td>
+	      </tr>
+    </table>
+		<table cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#ffffff" width="600" class="email-container">
+  <tr>
+    <td style="padding: 20px; text-align: left; font-family: 'SF Pro Display', 'Roboto'; font-size: 16px; mso-height-rule: exactly; line-height: 25px; color: #000000;">
+      <p><strong>Quer saber mais sobre o assunto? Vamos conversar sobre a construção de comunidades engajadas no próximo Creators Insider, você não pode perder!</strong></p>
+      <p><p><strong><a href="https://calendar.google.com/event?action=TEMPLATE&tmeid=MzFtOWsyYzhtZGNxcXZnaDZtNDBvZzY5azYgZmVmYUBjcmVhdG9ycy5sbGM&tmsrc=fefa%40creators.llc" target="_blank" style="color: #7553e2">
+        Clique aqui</a></strong> para adicionar na sua agenda, <a href="https://calendar.google.com/event?action=TEMPLATE&tmeid=MzFtOWsyYzhtZGNxcXZnaDZtNDBvZzY5azYgZmVmYUBjcmVhdG9ycy5sbGM&tmsrc=fefa%40creators.llc" target="_blank" style="color: #7553e2">
+         e aqui</a></strong>  para ativar o lembrete!</p> 
+
+  <tr>
+        <td style="padding: 20px; text-align: left; font-family: montserrat; font-size: 16px; mso-height-rule: exactly; line-height: 25px; color: #000000;"><img src="https://mcusercontent.com/eef0dd89a96a8d4d115efcf01/images/e2c38cf8-32fa-b5df-1bcd-e178e50f6dec.png" width="560" height="1" alt=""/>
+          <!-- Button : END --></td>
+      </tr>
+    </table>
+    <table cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#ffffff" width="600" class="email-container">
+      <tr>
+        <td style="padding: 20px; text-align: left; font-family: montserrat; font-size: 16px; mso-height-rule: exactly; line-height: 25px; color: #000000;"><img src="https://mcusercontent.com/1d3d02736d40ab9c7cf09f0b3/images/7f1f5a4a-3d88-15c3-2046-fe6ba5331718.png" width="" height="" alt=""/>
+          <!-- Button : END --></td>
+      </tr>
+    </table>
+    <table cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#ffffff" width="600" class="email-container">
+      <tr>
+        <td style="padding: 20px; text-align: left; font-family: 'SF Pro Display', 'Roboto'; font-size: 16px; mso-height-rule: exactly; line-height: 25px; color: #000000;"><p>Conheça alguns dos talentos da nossa comunidade que possuem uma super comunidade engajada.</p>
+        <!-- Button : END --></td>
+      </tr>
+    </table>
+    <table cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#ffffff" width="600" class="email-container">
+      <tr>
+        <td style="padding: 20px; text-align: center; font-family: 'SF Pro Display', 'Roboto'; font-size: px; mso-height-rule: exactly; line-height: px; color: #000000;"><a href="https://creators.llc/c/10222/Barbara" target="_blank"><img src="https://mcusercontent.com/1d3d02736d40ab9c7cf09f0b3/images/958a34d1-0495-ffdd-3ade-b4c795b511ae.png" width="150" height="174" alt=""></a>
+          <!-- Button : END --></td>
+        <td style="padding: 20px; text-align: left; font-family: 'SF Pro Display', 'Roboto'; font-size: 16px; mso-height-rule: exactly; line-height: 25px; color: #000000;"><p><strong>Barbara Coura</strong></p>
+          <p>Uma das maiores TikTokers atualmente, Bárbara diverte e entretém sua comunidade composta por mais de 8M pessoas.
+            <!-- Button : END -->
+          </p>
+<p><strong><a href="https://creators.llc/c/10222/Barbara " target="_blank" style="color: #7553e2">Ver mais</a></strong></p></td>
+      </tr>
+    </table>
+
+
+    <table cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#ffffff" width="600" class="email-container">
+      <tr>
+        <td style="padding: 20px; text-align: center; font-family: 'SF Pro Display', 'Roboto'; font-size: px; mso-height-rule: exactly; line-height: px; color: #000000;"><a href="https://creators.llc/c/8260/STELLA " target="_blank"><img src="https://mcusercontent.com/1d3d02736d40ab9c7cf09f0b3/images/7b7464fa-3eff-57e0-43f2-553f9d411a56.png" width="150" height="174" alt=""></a>
+          <!-- Button : END --></td>
+        <td style="padding: 20px; text-align: left; font-family: 'SF Pro Display', 'Roboto'; font-size: 16px; mso-height-rule: exactly; line-height: 25px; color: #000000;"><p><strong>Noize</strong></p>
+          <p>Primeiro clube de assinaturas de discos de vinil da América Latina, se consolidou como um dos principais agentes de fomento da cultura do vinil no Brasil.</p>
+<p><strong><a href="https://creators.llc/c/9936/Noize" target="_blank" style="color: #7553e2">Ver mais</a></strong></p></td>
+      </tr>
+    </table>
+    <table cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#ffffff" width="600" class="email-container">
+      <tr>
+        <td style="padding: 20px; text-align: center; font-family: 'SF Pro Display', 'Roboto'; font-size: px; mso-height-rule: exactly; line-height: px; color: #000000;"><a href="https://creators.llc/c/9812/Fayda" target="_blank"><img src="https://mcusercontent.com/1d3d02736d40ab9c7cf09f0b3/images/cca277a8-3c6d-2272-e12d-2de190425eba.png" width="150" height="174" alt=""></a>
+          <!-- Button : END --></td>
+        <td style="padding: 20px; text-align: left; font-family: 'SF Pro Display', 'Roboto'; font-size: 16px; mso-height-rule: exactly; line-height: 25px; color: #000000;"><p><strong>Fayda</strong></p>
+          <p>Advogada criminalista e carismática, Fayda Belo criou sua sólida comunidade ensinando seus seguidores a usar a lei para se defender dos mais variados crimes.
+            <!-- Button : END -->
+          </p>
+<p><strong><a href=https://creators.llc/c/9812/Fayda" target="_blank" style="color: #7553e2">Ver mais</a></strong></p></td>
+      </tr>
+    </table>
+    <table cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#ffffff" width="600" class="email-container">
+      <tr>
+        <td style="padding: 20px; text-align: center; font-family: 'SF Pro Display', 'Roboto'; font-size: px; mso-height-rule: exactly; line-height: px; color: #000000;"><a href="https://creators.llc/c/2857/Clara" target="_blank"><img src="https://mcusercontent.com/1d3d02736d40ab9c7cf09f0b3/images/1d84ba3a-8251-ee3a-9603-067cac02f989.png" width="150" height="174" alt=""></a>
+          <!-- Button : END --></td>
+        <td style="padding: 20px; text-align: left; font-family: 'SF Pro Display', 'Roboto'; font-size: 16px; mso-height-rule: exactly; line-height: 25px; color: #000000;"><p><strong>Clara Fagundes</strong></p>
+          <p>Estrategista e criadora de conteúdo, trend forecaster e pesquisadora. Seus temas de expertise são: mulheres, Brasil & diversidade, moda & beleza, trends & futuro, e influência.
+            <!-- Button : END -->
+          </p>
+<p><strong><a href=https://creators.llc/c/2857/Clara " target="_blank" style="color: #7553e2">Ver mais</a></strong></p></td>
+      </tr>
+    </table>
+    
+    <table cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#ffffff" width="600" class="email-container">
+      <tr>
+        <td style="padding: 20px; text-align: center; font-family: 'SF Pro Display', 'Roboto'; font-size: px; mso-height-rule: exactly; line-height: px; color: #000000;"><a href="https://creators.llc/c/9914/Cesar 
+          " target="_blank"><img src="https://mcusercontent.com/1d3d02736d40ab9c7cf09f0b3/images/45f84fb7-fb13-035e-d822-57cf16301295.png" width="150" height="174" alt=""></a>
+          <!-- Button : END --></td>
+        <td style="padding: 20px; text-align: left; font-family: 'SF Pro Display', 'Roboto'; font-size: 16px; mso-height-rule: exactly; line-height: 25px; color: #000000;"><p><strong>César Nascimento</strong></p>
+          <p>
+            <!-- Button : END -->
+            César é estudante de Design de Moda, natural de Porto Alegre e apaixonado por todo tipo de assunto que envolve o mundo fashion..</p>
+<p><strong><a href="https://creators.llc/c/9914/Cesar" target="_blank" style="color: #7553e2">Ver mais</a></strong></p></td>
+      </tr>
+    </table>
+
+
+<table cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#ffffff" width="600" class="email-container">
+  <tr>
+    <td style="padding: 20px; text-align: left; font-family: montserrat; font-size: 16px; mso-height-rule: exactly; line-height: 25px; color: #000000;"><img src="https://mcusercontent.com/eef0dd89a96a8d4d115efcf01/images/e2c38cf8-32fa-b5df-1bcd-e178e50f6dec.png" width="560" height="1" alt=""/>
+      <!-- Button : END --></td>
+  </tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#ffffff" width="600" class="email-container">
+  <tr>
+    <td style="padding: 20px; text-align: left; font-family: 'SF Pro Display', 'Roboto'; font-size: 16px; mso-height-rule: exactly; line-height: 25px; color: #000000;"><img src="https://mcusercontent.com/1d3d02736d40ab9c7cf09f0b3/images/faa3555a-48bb-1601-9678-b45d27d92769.png" width="450" height="83" alt="">
+      <img src="https://mcusercontent.com/1d3d02736d40ab9c7cf09f0b3/images/27e0ca64-6dc6-b473-c121-79458f4a043c.gif" width="" height="" alt="">
+<!-- Button : END --></td>
+  </tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#ffffff" width="600" class="email-container">
+  <tr>
+    <td style="padding: 20px; text-align: left; font-family: 'SF Pro Display', 'Roboto'; font-size: 16px; mso-height-rule: exactly; line-height: 25px; color: #000000;"><strong><a href="https://www.instagram.com/reel/Ca-b5Iaoozk/?utm_medium=copy_link" target="_blank"><img src="https://mcusercontent.com/1d3d02736d40ab9c7cf09f0b3/images/b5a9f860-f6b3-09c8-16c6-1677bda14f4c.gif" width="" height="" alt=""></a></strong>
+      <!-- Button : END --></td>
+    <td style="padding: 20px; text-align: left; font-family: 'SF Pro Display', 'Roboto'; font-size: 16px; mso-height-rule: exactly; line-height: 25px; color: #000000;"><a href="https://www.instagram.com/p/CbqVgXjD5y7/" target="_blank"><img src="https://mcusercontent.com/1d3d02736d40ab9c7cf09f0b3/images/9e11b359-123f-cf67-c651-1b4eb9fee6e2.gif" width="" height="" alt=""></a>
+      <!-- Button : END --></td>
+    <td style="padding: 20px; text-align: left; font-family: 'SF Pro Display', 'Roboto'; font-size: 16px; mso-height-rule: exactly; line-height: 25px; color: #000000;"><a href="https://www.instagram.com/reel/CbDVZQsA_k1/?utm_source=ig_web_copy_link" target="_blank"><img src="https://mcusercontent.com/1d3d02736d40ab9c7cf09f0b3/images/65aad008-535c-e0c5-1cd2-53f131fd1f72.gif" width="" height="" alt=""></a>
+      <!-- Button : END --></td>
+  </tr>
+</table>
+
+<table cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#ffffff" width="600" class="email-container">
+  <tr>
+    <td style="padding: 20px; text-align: left; font-family: montserrat; font-size: 16px; mso-height-rule: exactly; line-height: 25px; color: #000000;"><img src="https://mcusercontent.com/eef0dd89a96a8d4d115efcf01/images/e2c38cf8-32fa-b5df-1bcd-e178e50f6dec.png" width="560" height="1" alt=""/>
+      <!-- Button : END --></td>
+  </tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#ffffff" width="600" class="email-container">
+  <tr>
+    <td style="padding: ; text-align: left; font-family: montserrat; font-size: 16px; mso-height-rule: exactly; line-height: 25px; color: #000000;"><a href="https://g.page/r/CYBK3P-cWeE4EAg/review" target="_blank"><img src="https://mcusercontent.com/1d3d02736d40ab9c7cf09f0b3/images/26f46f1b-0a6a-f1e6-bb54-d4d8a548cf98.png" width="600" height="" alt=""></a>
+      <!-- Button : END --></td>
+  </tr>
+</table>
+    <table cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#ffffff" width="600" class="email-container">
+      <tr>
+        <td style="padding: 10px; text-align: center; font-family: 'SF Pro Display', 'Roboto'; font-size: 16px; mso-height-rule: exactly; line-height: 25px; color: #000000;"></td>
+      </tr>
+    </table>
+    <table cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#f0f1f3" width="600" class="email-container">
+  <tbody>
+        <tr>
+          <td style="padding: 20px; text-align: left; font-family: 'SF Pro Display', 'Roboto'; font-size: 16px; mso-height-rule: exactly; line-height: 25px; color: #000000;"><p><em>Fique à vontade para responder este e-mail, vou adorar conversar contigo.</em></p>
+            <p><strong>Até a próxima,</strong></p>
+            <p></p>
+            <p><strong><img src="https://mcusercontent.com/eef0dd89a96a8d4d115efcf01/images/026a756b-ae8c-25f4-102a-d68cc591acc8.png" width="250" height="88" alt=""></strong>
+              <!-- Button : END -->
+            </p>
+            <p><br>
+              <em> Conte com a gente – <strong>bons trabalhos! </strong></em></p></td>
+        </tr>
+  </tbody>
+    </table>
+<table cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#d3d4d8" width="600" class="email-container">
+  <tr>
+<td style="padding:20px;text-align:right;font-family:'SF Pro Display', Roboto;font-size:12px;mso-height-rule:exactly;line-height:0px;color:#7f7f7f;">
+<p><a href="https://www.instagram.com/creators.llc/" target="_blank"><img src="https://mcusercontent.com/1d3d02736d40ab9c7cf09f0b3/images/f108527c-3c1c-6e20-c2c1-84294f78d809.png" width="40" height="40" alt=""></a>
+</p>
+</td>
+<td style="padding:20px;text-align:left;font-family:'SF Pro Display', Roboto;font-size:12px;mso-height-rule:exactly;line-height:0px;color:#7f7f7f;">
+<p><a href="https://www.linkedin.com/company/creators-llc/" target="_blank"><img src="https://mcusercontent.com/1d3d02736d40ab9c7cf09f0b3/images/4342024f-ded4-a38a-3ae0-8f4eee1bd749.png" width="40" height="40" alt=""></a>
+</p>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#d3d4d8" width="600" class="email-container">
+  <tr>
+<td style="padding:20px;text-align:center;font-family:'SF Pro Display', Roboto;font-size:12px;mso-height-rule:exactly;line-height:20px;color:#7f7f7f;">
+<p>Vamos ficar tristes, mas se não quiser mais receber nossos e-mails<strong> <a href="https://llc.us14.list-manage.com/unsubscribe/post" style="color:#7f7f7f;" target="_blank">clique aqui</a></strong>.</p>
+<p> </p>
+<p> <strong>©REATORS</strong>, Trusted Creative Net, All rights reserved</p>
+<p> Please, read our <strong><a href="https://creators.llc/documents/Termos_de_Uso_Creators.pdf" style="color:#7f7f7f;" target="_blank">terms of use</a></strong> and write with your suggestions. </p>
+</td>
+</tr>
+</table>
+</body>
+</html>
